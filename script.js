@@ -2,6 +2,8 @@ $(document).ready(function() {
   
   // Event lister for when the saveBtn is pressed
   $(".saveBtn").on("click", function() {
+    // Just added this in so user will know if their saved works or not
+    alert("Thanks for saving!")
     // get nearby values
     var value = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
